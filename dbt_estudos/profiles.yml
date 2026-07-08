@@ -1,0 +1,10 @@
+dbt_estudos:
+  target: dev
+  outputs:
+    dev:
+      dataset: "{{ env_var('DBT_DBNAME', 'dbt') }}"
+      method: service-account
+      project: teste-dbt-501216
+      threads: 4
+      type: bigquery
+      keyfile: C:\Users\Thiago\.dbt\teste-dbt-501216-ae94ba663d71.json
