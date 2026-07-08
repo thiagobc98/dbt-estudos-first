@@ -45,6 +45,11 @@ models:
         schema: marts
         materialized: table
         tags: ['marts']
+
+seeds:
+  dbt_estudos:
+  schema: seeds
+  tags: ['seed']
         
 
     
