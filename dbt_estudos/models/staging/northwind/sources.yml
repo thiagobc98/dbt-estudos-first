@@ -11,6 +11,9 @@ sources:
         description: "Tabela com os pedidos da empresa."
         columns: 
           - name: order_id
+            tests:
+              - not_null
+              - unique
             description: "Id do pedido"
           - name: customer_id
             description: "Id do cliente"
