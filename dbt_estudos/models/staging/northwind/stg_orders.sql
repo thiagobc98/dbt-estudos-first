@@ -12,7 +12,8 @@ WITH orders AS (
         ship_city,
         ship_region,
         ship_postal_code,
-        ship_country
+        ship_country,
+        CASE WHEN shipped_date is null then 'pendente' else 'enviado' end as status_envio
     FROM {{ source('northwind', 'orders') }}
 )
 SELECT *

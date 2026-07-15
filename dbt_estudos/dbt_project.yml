@@ -50,6 +50,11 @@ seeds:
   dbt_estudos:
   schema: seeds
   tags: ['seed']
+
+snapshots:
+  dbt_estudos:
+    tags: ['snapshots']
+    schema: snapshots
         
 
     

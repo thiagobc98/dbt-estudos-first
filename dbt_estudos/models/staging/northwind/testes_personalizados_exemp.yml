@@ -1,0 +1,12 @@
+version: 2
+
+models:
+    - name: clientes
+      columns:
+        - name: id_cliente
+          tests:
+            - unique
+            - not_null
+        - name: email
+          tests:
+            - valid_email

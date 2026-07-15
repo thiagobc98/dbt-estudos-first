@@ -8,3 +8,4 @@ dbt_estudos:
       threads: 4
       type: bigquery
       keyfile: C:\Users\Thiago\.dbt\teste-dbt-501216-ae94ba663d71.json
+
